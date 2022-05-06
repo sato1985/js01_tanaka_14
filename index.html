@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<!--
+	Fractal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>あんぱんまん じゃんけんゲーム</title>
+		<script src="js/janken.js"></script>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+			<header id="header">
+				<div class="content">
+					<h1><a href="images/アンパンマントップ.png">じゃんけんぽんゲーム</a></h1>
+					<a href="https://www.anpanman.jp/index.html">みんなだいすき、あんぱんまん</a></p>
+					<ul class="actions">
+						<li><a href="#one" class="button icon solid fa-chevron-down scrolly">とうじょうするキャラクター</a></li>
+						<li><a href="#two" class="button icon solid fa-chevron-down scrolly">ゲームについて</a></li>
+						<li><a href="#three" class="button icon solid fa-chevron-down scrolly">あそぶ</a></li>
+						<li><a href="https://play.google.com/store/apps/details?id=jp.anpanman.korenaani&hl=ja&gl=US" class="button primary icon solid fa-download">スマホばん</a></li>
+
+					</ul>
+				</div>
+				<div class="image phone"><div class="inner"><img src="images/あんぱんまんトップ.jpg" /></div></div>
+			</header>
+
+		<!-- Two -->
+		<header class="major">
+			<h2>とうじょうするキャラクター</h2>
+				<section id="one" class="wrapper">
+				<div class="inner alt">
+					<section class="spotlight">
+						<div class="image"><img src="images/ドキンちゃん.gif" alt="" /></div>
+						<div class="content">
+							<h3>どきんちゃん</h3>
+							<p>悪さをする側にいる黴菌（ばいきん）の女の子で、ばいきんまんに次ぐ重要な敵役となっている。シリーズ中最も重要なトリックスターで、テレビアニメの通常回では、常に悪の側にいるばいきんまんと共に物語を牽引しながら、善にも悪にも囚われない奔放な行動を執る。</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/食パンマン.gif" alt="" /></div>
+						<div class="content">
+							<h3>しょくパンマン</h3>
+							<p>頭部が食パンでできている、空飛ぶ正義のヒーロー。紳士的性格のイケメンで、悪役ばいきんまんの仲間で本来なら敵対するはずの女の子ドキンちゃんから恋い慕われている</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/バイキンマン.gif" alt="" /></div>
+						<div class="content">
+							<h3>ばいきんまん</h3>
+							<p>悪さをする黴菌（ばいきん）で、シリーズ中最も重要な敵役となっている。常に悪の側にいてブレることの無いばいきんまんは、相棒とも言えるドキンちゃんのトリックスター振りに翻弄されっぱなしだが、それでも特にテレビアニメでは共に物語の発端となるトラブルを引き起こし続け、毎度毎度最後には正義のヒーローに負けて「バイバイキーン」の捨て台詞と共に去ってゆく。</p>
+						</div>
+					</section>
+				</div>
+
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2 special">
+				<header class="major">
+					<h2>さんかくかんけいでプレイしよう！</h2>
+					<p>しょくぱんまんは、どきんちゃんをメロメロ～<br>
+					   どきんちゃんは、ばいきんまんをペコペコ～させちゃう <br>
+					   ばいきんまんは、しょくぱんんまんをカビカビにしてカビルンルン</p>
+					<div class="image"><img src="images/ルール図.png" alt="" /></div>
+				</header>
+			</section>
+
+			<section id="three" class="wrapper style2 special">
+				<header class="major">
+					<h2>あそぶ</h2>
+					<script src="janken.js"></script>
+					<p>だしたいキャラクターをえらんでね</p>
+				<div id="main">
+					<div id="container">
+					  <h2>あなたがえらんだきゃらくたー</h2>
+					  <table>
+						  <tr>
+							<td><img src="images/dokin_2.png" onclick="janken(0)"></td>
+							<td><img src="images/shokupan_2.png" onclick="janken(1)"></td>
+							<td><img src="images/baikin_2.png" onclick="janken(2)"></td>
+						  </tr>
+					  </table>
+					  <table>
+						<tr>
+							<td>きみのキャラクター</td>
+							<td>あいてのキャラクター</td>
+						</tr>
+						<tr>
+							<td><img src="" id="userImg"></td>
+							<td><img src="" id="pcImg"></td>
+						</tr>
+						<tr>
+							<td colspan="2" id="res">
+							<p id="result"></p>
+						</td>
+						</tr>
+					</table>
+					  <hr>
+			</section>
+		</header>
+
+
+
+
+		<!-- Scripts -->
+	<!-- <script src="./main.js"></script>		   -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			function janken (user){
+				let userJankens = ['dokin_2.png', 'shokupan_2.png', 'baikin_2.png'];
+				let userImg = document.getElementById("userImg");
+				userImg.src = "images/" + userJankens[user];
+
+				let pcJanken = ['dokin_3.png', 'shokupan_3.png', 'baikin_3.png'];
+				let pc = Math.floor(Math.random() *3);
+				let pcImg= document.getElementById("pcImg");
+				pcImg.src="images/" + pcJanken[pc];
+
+				// 二次元配列。
+				let result = [['あいこ','かち','まけ'],['まけ','あいこ','かち'],['かち','まけ','あいこ']];
+				document.getElementById("result").textContent = result[user][pc];
+			}
+		</script>
+
+</body>
+</html>
